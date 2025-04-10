@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мережі та Протоколи - Детальна інформація</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Головна</a></li>
+                <li><a href="networks.html">Мережі та Протоколи</a></li>
+                <li><a href="login.html">Авторизація</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h1>Основи мережі Інтернет та протоколів</h1>
+            
+            <article>
+                <h2>1. Основні терміни</h2>
+                <div class="term">
+                    <h3>IP-адреса</h3>
+                    <p>Унікальний ідентифікатор пристрою в мережі, що дозволяє пристроям знаходити і "спілкуватися" між собою в Інтернеті.</p>
+                </div>
+                <div class="term">
+                    <h3>MAC-адреса</h3>
+                    <p>Фізична адреса мережевої карти, унікальна для кожного пристрою. Використовується на канальному рівні для ідентифікації.</p>
+                </div>
+                <div class="term">
+                    <h3>DNS (Domain Name System)</h3>
+                    <p>Система, що перетворює доменні імена (наприклад, `google.com`) у відповідні IP-адреси.</p>
+                </div>
+                <div class="term">
+                    <h3>LAN / WAN</h3>
+                    <ul>
+                        <li><strong>LAN (Local Area Network)</strong> – локальна мережа в межах будівлі, офісу.</li>
+                        <li><strong>WAN (Wide Area Network)</strong> – глобальна мережа, наприклад, Інтернет.</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h2>2. Мережева адресація</h2>
+                <div class="term">
+                    <h3>DHCP (Dynamic Host Configuration Protocol)</h3>
+                    <p>Протокол, який автоматично призначає IP-адреси пристроям у мережі.</p>
+                    <ul>
+                        <li><strong>Статична резервація</strong> — IP-адреса закріплюється за конкретним пристроєм.</li>
+                    </ul>
+                </div>
+                <div class="term">
+                    <h3>CIDR (Classless Inter-Domain Routing)</h3>
+                    <p>Метод представлення IP-адрес з маскою, наприклад: `192.168.0.1/24`.</p>
+                </div>
+            </article>
+
+            <article>
+                <h2>3. NAT (Network Address Translation)</h2>
+                <p>Технологія, яка переписує IP-адреси з локальних (сірі адреси) на глобальні (білі).</p>
+                <div class="term">
+                    <h3>Види NAT:</h3>
+                    <ul>
+                        <li><strong>Статичний</strong> — один локальний = один глобальний</li>
+                        <li><strong>Динамічний</strong> — IP береться з пулу доступних адрес</li>
+                        <li><strong>PAT (Port Address Translation)</strong> — багато локальних адрес → одна глобальна + порти</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h2>4. Протоколи передачі даних</h2>
+                <div class="term">
+                    <h3>TCP (Transmission Control Protocol)</h3>
+                    <ul>
+                        <li>Протокол на транспортному рівні</li>
+                        <li>Надійний, гарантована доставка</li>
+                        <li>Повільніший, перевіряє цілісність пакетів</li>
+                        <li>Використовується для передачі важливих даних (вебсайти, email)</li>
+                    </ul>
+                </div>
+                <div class="term">
+                    <h3>UDP (User Datagram Protocol)</h3>
+                    <ul>
+                        <li>Швидший, без перевірок доставки</li>
+                        <li>Може втрачати дані, не гарантує послідовність</li>
+                        <li>Підходить для відео, голосового зв'язку</li>
+                    </ul>
+                </div>
+            </article>
+
+            <article>
+                <h2>5. Протоколи доступу до веб</h2>
+                <div class="term">
+                    <h3>HTTP (Hypertext Transfer Protocol)</h3>
+                    <ul>
+                        <li>Протокол для передачі вебсторінок (порт 80)</li>
+                        <li>Не шифрує дані, може бути перехоплений</li>
+                    </ul>
+                </div>
+                <div class="term">
+                    <h3>HTTPS (Secure HTTP)</h3>
+                    <ul>
+                        <li>Такий самий, але з шифруванням</li>
+                        <li>Використовує SSL/TLS</li>
+                        <li>Безпечніший, захищає особисті дані</li>
+                    </ul>
+                </div>
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p>© 2025 Мережі Інтернет та Протоколи</p>
+    </footer>
+</body>
+</html> 
